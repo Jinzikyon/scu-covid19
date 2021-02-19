@@ -129,7 +129,7 @@ def message(key, title, body):
     """
     微信通知打卡结果
     """
-    msg_url = "https://sc.ftqq.com/{}.send?text={}&desp={}".format(key, title, body)
+    msg_url = "https://sctapi.ftqq.com/{}.send?text={}&desp={}".format(key, title, body)
     requests.get(msg_url)
 
 
